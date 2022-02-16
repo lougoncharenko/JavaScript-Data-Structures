@@ -264,5 +264,68 @@ let nestedArray = [
   
   console.log(checkInventory("apples"));
 
+//check if an object has a property
+let users = {
+    Alan: {
+      age: 27,
+      online: true
+    },
+    Jeff: {
+      age: 32,
+      online: true
+    },
+    Sarah: {
+      age: 48,
+      online: true
+    },
+    Ryan: {
+      age: 19,
+      online: true
+    }
+  };
+  
+  function isEveryoneHere(userObj) {
+    // Only change code below this line
+   if(
+  users.hasOwnProperty('Alan')&&
+  users.hasOwnProperty('Jeff')&&
+  users.hasOwnProperty('Sarah')&&
+  users.hasOwnProperty('Ryan')
+   ){
+     return true;
+   } else{
+     return false;
+   }
+}
+
+//Generate an Array of All Object Keys with Object.keys()
+let user = {
+    name: 'Kenneth',
+    age: 28,
+    data: {
+      username: 'kennethCodesAllDay',
+      joinDate: 'March 26, 2016',
+      organization: 'freeCodeCamp',
+      friends: [
+        'Sam',
+        'Kira',
+        'Tomo'
+      ],
+      location: {
+        city: 'San Francisco',
+        state: 'CA',
+        country: 'USA'
+      }
+    }
+  };
+  
+  function addFriend(userObj, friend) {
+    // Only change code below this line
+  userObj.data.friends.push(friend)
+  return userObj.data.friends;
+    // Only change code above this line
+  }
+  
+  console.log(addFriend(user, 'Pete'));
 
 
