@@ -123,6 +123,41 @@ function spreadOut() {
   console.log(spreadOut());
 
   //check for the presence oif ab element wuth indexOf()
+  function quickCheck(arr, elem) {
+    // Only change code below this line
+  if (arr.indexOf(elem) >= 0) {
+      return true;
+    }
+    return false;
+    // Only change code above this line
+  }
   
+  console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
 
 
+function greaterThanTen(arr){
+    let newArr=[];
+    for (let i=0; i<arr.length; i++){
+        if(arr[i] >10){
+            newArr.push(arr[i]);
+        }
+  
+    }
+    return newArr;
+}
+
+greaterThanTen([2, 12, 8, 14, 80, 0, 1]);
+
+
+
+function  filteredArray(arr,elem){
+    let newArr=[];
+    for(let i=0; i<arr.length; i++){
+        if (arr[i].indexOf(elem) == -1){
+            newArr.push(arr[i])
+        }
+    }
+
+}
+
+//complex arrays
