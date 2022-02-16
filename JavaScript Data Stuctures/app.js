@@ -107,3 +107,22 @@ let todaysWeather = weatherConditions.slice(1, 3); //todaysWeather would have th
 
 
 //Copy an Array with the Spread Operator
+
+//Combine Arrays with the Spread Operator
+let thisArray = ['sage', 'rosemary', 'parsley', 'thyme'];
+
+let thatArray = ['basil', 'cilantro', ...thisArray, 'coriander'];
+//thatArray would have the value ['basil', 'cilantro', 'sage', 'rosemary', 'parsley', 'thyme', 'coriander'].
+
+function spreadOut() {
+    let fragment = ['to', 'code'];
+    let sentence= ['learning', ...fragment, 'is', 'fun']; // Change this line
+    return sentence;
+  }
+  
+  console.log(spreadOut());
+
+  //check for the presence oif ab element wuth indexOf()
+  
+
+
